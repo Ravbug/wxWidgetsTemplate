@@ -12,6 +12,20 @@
 		AA1D0FCC222A0A4B00678304 /* wxrelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */; };
 		AA1D0FCD222A0A4B00678304 /* wxcocoa.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FCA222A0A4B00678304 /* wxcocoa.xcconfig */; };
 		AA1D0FCE222A0A4B00678304 /* wxdebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FCB222A0A4B00678304 /* wxdebug.xcconfig */; };
+		AAD015C0222B2FE300E25CB7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF9D87B222B14E900437548 /* main.cpp */; };
+		AAD015C4222B2FE300E25CB7 /* wxrelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */; };
+		AAD015C5222B2FE300E25CB7 /* wxcocoa.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FCA222A0A4B00678304 /* wxcocoa.xcconfig */; };
+		AAD015C6222B2FE300E25CB7 /* Info_cocoa.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAF9D87A222B14E900437548 /* Info_cocoa.plist */; };
+		AAD015C7222B2FE300E25CB7 /* wxdebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FCB222A0A4B00678304 /* wxdebug.xcconfig */; };
+		AAD015CF222B328200E25CB7 /* libwx_osx_cocoa_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1D0F83222A0A1D00678304 /* libwx_osx_cocoa_static.a */; };
+		AADF6A25222B359700991DD2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A0B222B359700991DD2 /* CoreFoundation.framework */; };
+		AADF6A27222B35B300991DD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A26222B35B300991DD2 /* CoreGraphics.framework */; };
+		AADF6A29222B35DA00991DD2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A28222B35DA00991DD2 /* ImageIO.framework */; };
+		AADF6A2B222B35E200991DD2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A2A222B35E200991DD2 /* CoreText.framework */; };
+		AADF6A2D222B35E800991DD2 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A2C222B35E800991DD2 /* Carbon.framework */; };
+		AADF6A2F222B360200991DD2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A2E222B360200991DD2 /* IOKit.framework */; };
+		AADF6A31222B360700991DD2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A30222B360700991DD2 /* AppKit.framework */; };
+		AADF6A33222B360C00991DD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A32222B360C00991DD2 /* Foundation.framework */; };
 		AAF9D87C222B14E900437548 /* Info_cocoa.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAF9D87A222B14E900437548 /* Info_cocoa.plist */; };
 		AAF9D87D222B14E900437548 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF9D87B222B14E900437548 /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -216,11 +230,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AA1D0F4E222A09A600678304 /* wxTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wxTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1D0F4E222A09A600678304 /* wxTemplateDynamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wxTemplateDynamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1D0F63222A0A1D00678304 /* wxcocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wxcocoa.xcodeproj; path = wxWidgets/build/osx/wxcocoa.xcodeproj; sourceTree = SOURCE_ROOT; };
 		AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxrelease.xcconfig; path = wxWidgets/build/osx/wxrelease.xcconfig; sourceTree = SOURCE_ROOT; };
 		AA1D0FCA222A0A4B00678304 /* wxcocoa.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxcocoa.xcconfig; path = wxWidgets/build/osx/wxcocoa.xcconfig; sourceTree = SOURCE_ROOT; };
 		AA1D0FCB222A0A4B00678304 /* wxdebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxdebug.xcconfig; path = wxWidgets/build/osx/wxdebug.xcconfig; sourceTree = SOURCE_ROOT; };
+		AAD015CD222B2FE300E25CB7 /* wxTemplateStatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wxTemplateStatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AADF6A0B222B359700991DD2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AADF6A26222B35B300991DD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AADF6A28222B35DA00991DD2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AADF6A2A222B35E200991DD2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		AADF6A2C222B35E800991DD2 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		AADF6A2E222B360200991DD2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		AADF6A30222B360700991DD2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AADF6A32222B360C00991DD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AAF9D87A222B14E900437548 /* Info_cocoa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info_cocoa.plist; path = source/Info_cocoa.plist; sourceTree = SOURCE_ROOT; };
 		AAF9D87B222B14E900437548 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = source/main.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -234,12 +257,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAD015C1222B2FE300E25CB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADF6A33222B360C00991DD2 /* Foundation.framework in Frameworks */,
+				AADF6A31222B360700991DD2 /* AppKit.framework in Frameworks */,
+				AADF6A2F222B360200991DD2 /* IOKit.framework in Frameworks */,
+				AADF6A2D222B35E800991DD2 /* Carbon.framework in Frameworks */,
+				AADF6A2B222B35E200991DD2 /* CoreText.framework in Frameworks */,
+				AADF6A29222B35DA00991DD2 /* ImageIO.framework in Frameworks */,
+				AADF6A27222B35B300991DD2 /* CoreGraphics.framework in Frameworks */,
+				AADF6A25222B359700991DD2 /* CoreFoundation.framework in Frameworks */,
+				AAD015CF222B328200E25CB7 /* libwx_osx_cocoa_static.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		AA14A0F2222A1219002C4553 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AADF6A32222B360C00991DD2 /* Foundation.framework */,
+				AADF6A30222B360700991DD2 /* AppKit.framework */,
+				AADF6A2E222B360200991DD2 /* IOKit.framework */,
+				AADF6A2C222B35E800991DD2 /* Carbon.framework */,
+				AADF6A2A222B35E200991DD2 /* CoreText.framework */,
+				AADF6A28222B35DA00991DD2 /* ImageIO.framework */,
+				AADF6A26222B35B300991DD2 /* CoreGraphics.framework */,
+				AADF6A0B222B359700991DD2 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -256,7 +303,8 @@
 		AA1D0F4F222A09A600678304 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA1D0F4E222A09A600678304 /* wxTemplate.app */,
+				AA1D0F4E222A09A600678304 /* wxTemplateDynamic.app */,
+				AAD015CD222B2FE300E25CB7 /* wxTemplateStatic.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,9 +357,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA1D0F4D222A09A600678304 /* wxTemplate */ = {
+		AA1D0F4D222A09A600678304 /* wxTemplateDynamic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA1D0F5F222A09A800678304 /* Build configuration list for PBXNativeTarget "wxTemplate" */;
+			buildConfigurationList = AA1D0F5F222A09A800678304 /* Build configuration list for PBXNativeTarget "wxTemplateDynamic" */;
 			buildPhases = (
 				AA1D0F4A222A09A600678304 /* Sources */,
 				AA1D0F4B222A09A600678304 /* Frameworks */,
@@ -323,9 +371,26 @@
 			dependencies = (
 				AA14A0F0222A1217002C4553 /* PBXTargetDependency */,
 			);
-			name = wxTemplate;
+			name = wxTemplateDynamic;
 			productName = wxTest;
-			productReference = AA1D0F4E222A09A600678304 /* wxTemplate.app */;
+			productReference = AA1D0F4E222A09A600678304 /* wxTemplateDynamic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAD015BC222B2FE300E25CB7 /* wxTemplateStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD015CA222B2FE300E25CB7 /* Build configuration list for PBXNativeTarget "wxTemplateStatic" */;
+			buildPhases = (
+				AAD015BF222B2FE300E25CB7 /* Sources */,
+				AAD015C1222B2FE300E25CB7 /* Frameworks */,
+				AAD015C3222B2FE300E25CB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wxTemplateStatic;
+			productName = wxTest;
+			productReference = AAD015CD222B2FE300E25CB7 /* wxTemplateStatic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -361,7 +426,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				AA1D0F4D222A09A600678304 /* wxTemplate */,
+				AA1D0F4D222A09A600678304 /* wxTemplateDynamic */,
+				AAD015BC222B2FE300E25CB7 /* wxTemplateStatic */,
 			);
 		};
 /* End PBXProject section */
@@ -556,6 +622,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAD015C3222B2FE300E25CB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD015C4222B2FE300E25CB7 /* wxrelease.xcconfig in Resources */,
+				AAD015C5222B2FE300E25CB7 /* wxcocoa.xcconfig in Resources */,
+				AAD015C6222B2FE300E25CB7 /* Info_cocoa.plist in Resources */,
+				AAD015C7222B2FE300E25CB7 /* wxdebug.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -564,6 +641,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAF9D87D222B14E900437548 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD015BF222B2FE300E25CB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD015C0222B2FE300E25CB7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,9 +777,12 @@
 		AA1D0F60222A09A800678304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = wxTest/wxTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PREFIX_HEADER = "$(WXROOT)/include/wx/wxprec.h";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(WX_PREPROCESSOR_DEFINITIONS)";
 				HEADER_SEARCH_PATHS = (
@@ -707,7 +795,7 @@
 					"@executable_path/../Frameworks",
 				);
 				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ravbug.wxTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ravbug.wxTemplateDynamic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					"\"$(WXROOT)/include\"",
@@ -722,9 +810,12 @@
 		AA1D0F61222A09A800678304 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = wxTest/wxTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PREFIX_HEADER = "$(WXROOT)/include/wx/wxprec.h";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(WX_PREPROCESSOR_DEFINITIONS)";
 				HEADER_SEARCH_PATHS = (
@@ -737,11 +828,93 @@
 					"@executable_path/../Frameworks",
 				);
 				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ravbug.wxTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ravbug.wxTemplateDynamic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					"\"$(WXROOT)/include\"",
 					"\"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\"",
+				);
+				WXPLATFORM = __WXOSX_COCOA__;
+				WXROOT = "$(PROJECT_DIR)/wxWidgets";
+				WX_PREPROCESSOR_DEFINITIONS = "WXBUILDING $(WXPLATFORM) __WX__ _FILE_OFFSET_BITS=64 _LARGE_FILES MACOS_CLASSIC __WXMAC_XCODE__=1 SCI_LEXER NO_CXX11_REGEX WX_PRECOMP=1 wxUSE_UNICODE_UTF8=0 wxUSE_UNICODE_WCHAR=1";
+			};
+			name = Release;
+		};
+		AAD015CB222B2FE300E25CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_ENTITLEMENTS = wxTest/wxTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PREFIX_HEADER = "$(WXROOT)/include/wx/wxprec.h";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(WX_PREPROCESSOR_DEFINITIONS)";
+				HEADER_SEARCH_PATHS = (
+					"\"$(WXROOT)/src/tiff/libtiff\"",
+					"\"$(WXROOT)/src/regex\"",
+				);
+				INFOPLIST_FILE = "wxTemplateDynamic copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ravbug.wxTemplateStatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(WXROOT)/include\"",
+					"\"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\"",
+					"\"$(WXROOT)/src/zlib\"",
+					"\"$(WXROOT)/src/jpeg\"",
+					"\"$(WXROOT)/src/png\"",
+					"\"$(WXROOT)/src/expat/expat/lib\"",
+					"\"$(WXROOT)/src/tiff/libtiff\"",
+					"\"$(WXROOT)/src/stc/scintilla/src\"",
+					"\"$(WXROOT)/src/stc/scintilla/include\"",
+					"\"$(WXROOT)/src/stc/scintilla/lexlib\"",
+				);
+				WXPLATFORM = __WXOSX_COCOA__;
+				WXROOT = "$(PROJECT_DIR)/wxWidgets";
+				WX_PREPROCESSOR_DEFINITIONS = "WXBUILDING $(WXPLATFORM) __WX__ _FILE_OFFSET_BITS=64 _LARGE_FILES MACOS_CLASSIC __WXMAC_XCODE__=1 SCI_LEXER NO_CXX11_REGEX WX_PRECOMP=1 wxUSE_UNICODE_UTF8=0 wxUSE_UNICODE_WCHAR=1";
+			};
+			name = Debug;
+		};
+		AAD015CC222B2FE300E25CB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_ENTITLEMENTS = wxTest/wxTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PREFIX_HEADER = "$(WXROOT)/include/wx/wxprec.h";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(WX_PREPROCESSOR_DEFINITIONS)";
+				HEADER_SEARCH_PATHS = (
+					"\"$(WXROOT)/src/tiff/libtiff\"",
+					"\"$(WXROOT)/src/regex\"",
+				);
+				INFOPLIST_FILE = "wxTemplateDynamic copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ravbug.wxTemplateStatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(WXROOT)/include\"",
+					"\"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\"",
+					"\"$(WXROOT)/src/zlib\"",
+					"\"$(WXROOT)/src/jpeg\"",
+					"\"$(WXROOT)/src/png\"",
+					"\"$(WXROOT)/src/expat/expat/lib\"",
+					"\"$(WXROOT)/src/tiff/libtiff\"",
+					"\"$(WXROOT)/src/stc/scintilla/src\"",
+					"\"$(WXROOT)/src/stc/scintilla/include\"",
+					"\"$(WXROOT)/src/stc/scintilla/lexlib\"",
 				);
 				WXPLATFORM = __WXOSX_COCOA__;
 				WXROOT = "$(PROJECT_DIR)/wxWidgets";
@@ -761,11 +934,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA1D0F5F222A09A800678304 /* Build configuration list for PBXNativeTarget "wxTemplate" */ = {
+		AA1D0F5F222A09A800678304 /* Build configuration list for PBXNativeTarget "wxTemplateDynamic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA1D0F60222A09A800678304 /* Debug */,
 				AA1D0F61222A09A800678304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD015CA222B2FE300E25CB7 /* Build configuration list for PBXNativeTarget "wxTemplateStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD015CB222B2FE300E25CB7 /* Debug */,
+				AAD015CC222B2FE300E25CB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
