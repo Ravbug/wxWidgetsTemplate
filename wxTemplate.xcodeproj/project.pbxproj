@@ -12,8 +12,8 @@
 		AA1D0FCC222A0A4B00678304 /* wxrelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */; };
 		AA1D0FCD222A0A4B00678304 /* wxcocoa.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FCA222A0A4B00678304 /* wxcocoa.xcconfig */; };
 		AA1D0FCE222A0A4B00678304 /* wxdebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FCB222A0A4B00678304 /* wxdebug.xcconfig */; };
-		AA1D0FD1222A0A7E00678304 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA1D0FD0222A0A7E00678304 /* main.cpp */; };
-		AABE859D222A199700F5723B /* Info_cocoa.plist in Resources */ = {isa = PBXBuildFile; fileRef = AABE859C222A199700F5723B /* Info_cocoa.plist */; };
+		AAF9D87C222B14E900437548 /* Info_cocoa.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAF9D87A222B14E900437548 /* Info_cocoa.plist */; };
+		AAF9D87D222B14E900437548 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF9D87B222B14E900437548 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,8 +221,8 @@
 		AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxrelease.xcconfig; path = wxWidgets/build/osx/wxrelease.xcconfig; sourceTree = SOURCE_ROOT; };
 		AA1D0FCA222A0A4B00678304 /* wxcocoa.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxcocoa.xcconfig; path = wxWidgets/build/osx/wxcocoa.xcconfig; sourceTree = SOURCE_ROOT; };
 		AA1D0FCB222A0A4B00678304 /* wxdebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxdebug.xcconfig; path = wxWidgets/build/osx/wxdebug.xcconfig; sourceTree = SOURCE_ROOT; };
-		AA1D0FD0222A0A7E00678304 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		AABE859C222A199700F5723B /* Info_cocoa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_cocoa.plist; sourceTree = "<group>"; };
+		AAF9D87A222B14E900437548 /* Info_cocoa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info_cocoa.plist; path = source/Info_cocoa.plist; sourceTree = SOURCE_ROOT; };
+		AAF9D87B222B14E900437548 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = source/main.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,7 +247,7 @@
 		AA1D0F45222A09A600678304 = {
 			isa = PBXGroup;
 			children = (
-				AA1D0F50222A09A600678304 /* wxTest */,
+				AA1D0F50222A09A600678304 /* source */,
 				AA1D0F4F222A09A600678304 /* Products */,
 				AA14A0F2222A1219002C4553 /* Frameworks */,
 			);
@@ -261,17 +261,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA1D0F50222A09A600678304 /* wxTest */ = {
+		AA1D0F50222A09A600678304 /* source */ = {
 			isa = PBXGroup;
 			children = (
-				AA1D0FD0222A0A7E00678304 /* main.cpp */,
+				AAF9D87A222B14E900437548 /* Info_cocoa.plist */,
+				AAF9D87B222B14E900437548 /* main.cpp */,
 				AA1D0FCA222A0A4B00678304 /* wxcocoa.xcconfig */,
-				AABE859C222A199700F5723B /* Info_cocoa.plist */,
 				AA1D0FCB222A0A4B00678304 /* wxdebug.xcconfig */,
 				AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */,
 				AA1D0F63222A0A1D00678304 /* wxcocoa.xcodeproj */,
 			);
-			path = wxTest;
+			path = source;
 			sourceTree = "<group>";
 		};
 		AA1D0F64222A0A1D00678304 /* Products */ = {
@@ -551,7 +551,7 @@
 			files = (
 				AA1D0FCC222A0A4B00678304 /* wxrelease.xcconfig in Resources */,
 				AA1D0FCD222A0A4B00678304 /* wxcocoa.xcconfig in Resources */,
-				AABE859D222A199700F5723B /* Info_cocoa.plist in Resources */,
+				AAF9D87C222B14E900437548 /* Info_cocoa.plist in Resources */,
 				AA1D0FCE222A0A4B00678304 /* wxdebug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,7 +563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA1D0FD1222A0A7E00678304 /* main.cpp in Sources */,
+				AAF9D87D222B14E900437548 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
