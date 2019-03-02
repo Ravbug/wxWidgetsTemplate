@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		AA14A0EE222A1217002C4553 /* libwx_osx_cocoa.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = AA1D0F81222A0A1D00678304 /* libwx_osx_cocoa.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		AA14A0F3222A1219002C4553 /* libwx_osx_cocoa.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1D0F81222A0A1D00678304 /* libwx_osx_cocoa.dylib */; };
-		AA14A0F7222A1482002C4553 /* Info_cocoa.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA14A0F6222A1482002C4553 /* Info_cocoa.plist */; };
 		AA1D0FCC222A0A4B00678304 /* wxrelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */; };
 		AA1D0FCD222A0A4B00678304 /* wxcocoa.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FCA222A0A4B00678304 /* wxcocoa.xcconfig */; };
 		AA1D0FCE222A0A4B00678304 /* wxdebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FCB222A0A4B00678304 /* wxdebug.xcconfig */; };
 		AA1D0FD1222A0A7E00678304 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA1D0FD0222A0A7E00678304 /* main.cpp */; };
+		AABE859D222A199700F5723B /* Info_cocoa.plist in Resources */ = {isa = PBXBuildFile; fileRef = AABE859C222A199700F5723B /* Info_cocoa.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,13 +216,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AA14A0F6222A1482002C4553 /* Info_cocoa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info_cocoa.plist; path = wxWidgets/samples/minimal/Info_cocoa.plist; sourceTree = SOURCE_ROOT; };
 		AA1D0F4E222A09A600678304 /* wxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1D0F63222A0A1D00678304 /* wxcocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wxcocoa.xcodeproj; path = wxWidgets/build/osx/wxcocoa.xcodeproj; sourceTree = SOURCE_ROOT; };
 		AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxrelease.xcconfig; path = wxWidgets/build/osx/wxrelease.xcconfig; sourceTree = SOURCE_ROOT; };
 		AA1D0FCA222A0A4B00678304 /* wxcocoa.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxcocoa.xcconfig; path = wxWidgets/build/osx/wxcocoa.xcconfig; sourceTree = SOURCE_ROOT; };
 		AA1D0FCB222A0A4B00678304 /* wxdebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxdebug.xcconfig; path = wxWidgets/build/osx/wxdebug.xcconfig; sourceTree = SOURCE_ROOT; };
 		AA1D0FD0222A0A7E00678304 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AABE859C222A199700F5723B /* Info_cocoa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_cocoa.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,8 +266,8 @@
 			children = (
 				AA1D0FD0222A0A7E00678304 /* main.cpp */,
 				AA1D0FCA222A0A4B00678304 /* wxcocoa.xcconfig */,
+				AABE859C222A199700F5723B /* Info_cocoa.plist */,
 				AA1D0FCB222A0A4B00678304 /* wxdebug.xcconfig */,
-				AA14A0F6222A1482002C4553 /* Info_cocoa.plist */,
 				AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */,
 				AA1D0F63222A0A1D00678304 /* wxcocoa.xcodeproj */,
 			);
@@ -551,7 +551,7 @@
 			files = (
 				AA1D0FCC222A0A4B00678304 /* wxrelease.xcconfig in Resources */,
 				AA1D0FCD222A0A4B00678304 /* wxcocoa.xcconfig in Resources */,
-				AA14A0F7222A1482002C4553 /* Info_cocoa.plist in Resources */,
+				AABE859D222A199700F5723B /* Info_cocoa.plist in Resources */,
 				AA1D0FCE222A0A4B00678304 /* wxdebug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
