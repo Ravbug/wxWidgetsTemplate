@@ -27,8 +27,8 @@ sudo make install --silent
 # test the installed library
 echo "wx-config: Currently installed wxWidgets version is $(wx-config --version)";
 
-echo "Running ldconfig to configure the dynamic linker runtime bindings, please enter the administrator password if prompted."
-sudo /sbin/ldconfig /usr/local/lib;
+#echo "Running ldconfig to configure the dynamic linker runtime bindings, please enter the administrator password if prompted."
+#sudo /sbin/ldconfig /usr/local/lib;
 
 echo "Setup is complete!"
 # set the directory back to the original script directory
