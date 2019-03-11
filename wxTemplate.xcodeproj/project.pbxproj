@@ -795,7 +795,7 @@
 					"@executable_path/../Frameworks",
 				);
 				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ravbug.wxTemplateDynamic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravbug.wxTemplateDynamic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					"\"$(WXROOT)/include\"",
@@ -829,7 +829,7 @@
 					"@executable_path/../Frameworks",
 				);
 				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ravbug.wxTemplateDynamic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravbug.wxTemplateDynamic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					"\"$(WXROOT)/include\"",
@@ -863,7 +863,7 @@
 					"@executable_path/../Frameworks",
 				);
 				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ravbug.wxTemplateStatic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravbug.wxTemplateStatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					"\"$(WXROOT)/include\"",
@@ -905,7 +905,7 @@
 					"@executable_path/../Frameworks",
 				);
 				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ravbug.wxTemplateStatic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravbug.wxTemplateStatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					"\"$(WXROOT)/include\"",
