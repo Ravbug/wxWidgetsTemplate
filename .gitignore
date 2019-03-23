@@ -351,3 +351,9 @@ MigrationBackup/
 *.res
 *.exp
 *.dll
+
+# wxWidgets compiled data
+wxWidgets/lib/vc_dll/
+wxWidgets/lib/vc_lib/
+wxWidgets/lib/vc_x64_dll/
+wxWidgets/lib/vc_x64_lib/
