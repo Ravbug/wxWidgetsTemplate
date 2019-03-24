@@ -6,7 +6,7 @@ All you need to do is start coding! Everything has been set up.
 ## How to use
 1. Download this repository as a zip.
 2. Unzip the file and open the Xcode project, Visual Studio project, or main.cpp in your preferred Linux editor.
-3. See the Setup Instructions on the Wiki.  
+3. See the [Setup Instructions](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Building-the-Projects) on the Wiki.  
 4. Start writing your code! Press the Compile/Build and Run buttons in Xcode or Visual Studio to compile and run your app.
 Additional instructions are on the Wiki.
 
