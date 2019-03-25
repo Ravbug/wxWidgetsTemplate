@@ -13,11 +13,7 @@ All you need to do is start coding! Everything has been set up.
 Additional instructions are on the Wiki.
 
 ## Updating the wxWidgets version
-1. [Download the latest source](https://www.wxwidgets.org/downloads/) from wxWidgets.
-2. Extract the ZIP and rename the folder to `wxWidgets`
-3. Replace the wxWidgets folder in the project with the new one you downloaded.
-4. See the Setup Instructions on the Wiki
-Please see the Wiki page for more information.
+See the [wiki page](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Updating-or-Resetting-wxWidgets) for details. 
 
 ## Issues
 Please report all problems in the [Issues](https://github.com/Ravbug/wxWidgetsTemplate/issues) section of this repository. 
