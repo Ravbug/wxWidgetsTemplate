@@ -1,5 +1,5 @@
 # wxWidgetsTemplate
-<img align="left" width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/WxWidgets.svg/2000px-WxWidgets.svg.png">
+<img align="left" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/WxWidgets.svg/2000px-WxWidgets.svg.png">
 
 wxWidgets is an efficient cross-platform GUI library for C++. It supports other languages as well. However, wxWidgets is quite difficult to set up.
 This is a template project for wxWidgets C++. It contains a Mac Xcode project, a Windows Visual Studio project, and two bash scripts for Linux.
