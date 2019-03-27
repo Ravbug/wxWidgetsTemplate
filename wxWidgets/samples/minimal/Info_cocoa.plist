@@ -9,7 +9,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>$(PRODUCT_NAME) version 1.0, (c) Ravbug, wxWidgets</string>
 	<key>CFBundleIconFile</key>
-	<string>wxmac.icns</string>
+	<string>source/wxmac.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA012114224C24D4000F4F82 /* wxmac.icns in Resources */ = {isa = PBXBuildFile; fileRef = AA012113224C24D4000F4F82 /* wxmac.icns */; };
+		AA012115224C24D4000F4F82 /* wxmac.icns in Resources */ = {isa = PBXBuildFile; fileRef = AA012113224C24D4000F4F82 /* wxmac.icns */; };
 		AA14A0EE222A1217002C4553 /* libwx_osx_cocoa.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = AA1D0F81222A0A1D00678304 /* libwx_osx_cocoa.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		AA14A0F3222A1219002C4553 /* libwx_osx_cocoa.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1D0F81222A0A1D00678304 /* libwx_osx_cocoa.dylib */; };
 		AA1D0FCC222A0A4B00678304 /* wxrelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */; };
@@ -230,6 +232,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA012113224C24D4000F4F82 /* wxmac.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = wxmac.icns; sourceTree = "<group>"; };
 		AA1D0F4E222A09A600678304 /* wxTemplateDynamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wxTemplateDynamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1D0F63222A0A1D00678304 /* wxcocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wxcocoa.xcodeproj; path = wxWidgets/build/osx/wxcocoa.xcodeproj; sourceTree = SOURCE_ROOT; };
 		AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = wxrelease.xcconfig; path = wxWidgets/build/osx/wxrelease.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -312,6 +315,7 @@
 		AA1D0F50222A09A600678304 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				AA012113224C24D4000F4F82 /* wxmac.icns */,
 				AAF9D87A222B14E900437548 /* Info_cocoa.plist */,
 				AAF9D87B222B14E900437548 /* main.cpp */,
 				AA1D0FCA222A0A4B00678304 /* wxcocoa.xcconfig */,
@@ -617,6 +621,7 @@
 			files = (
 				AA1D0FCC222A0A4B00678304 /* wxrelease.xcconfig in Resources */,
 				AA1D0FCD222A0A4B00678304 /* wxcocoa.xcconfig in Resources */,
+				AA012114224C24D4000F4F82 /* wxmac.icns in Resources */,
 				AAF9D87C222B14E900437548 /* Info_cocoa.plist in Resources */,
 				AA1D0FCE222A0A4B00678304 /* wxdebug.xcconfig in Resources */,
 			);
@@ -628,6 +633,7 @@
 			files = (
 				AAD015C4222B2FE300E25CB7 /* wxrelease.xcconfig in Resources */,
 				AAD015C5222B2FE300E25CB7 /* wxcocoa.xcconfig in Resources */,
+				AA012115224C24D4000F4F82 /* wxmac.icns in Resources */,
 				AAD015C6222B2FE300E25CB7 /* Info_cocoa.plist in Resources */,
 				AAD015C7222B2FE300E25CB7 /* wxdebug.xcconfig in Resources */,
 			);
