@@ -8,46 +8,50 @@ cd $DIR;
 
 cd wxWidgets/
 echo "Running autogen.sh"
-./autogen.sh;
+./autogen.sh && ags=1
 
-# make the build directory
-mkdir -p build/linux;
-cd build/linux;
+if [ $ags = 1 ]; then
+	# make the build directory
+	mkdir -p build/linux;
+	cd build/linux;
 
-echo "Running configure script"
-# run the configure script
-../../configure --enable-unicode --enable-debug && success=1
+	echo "Running configure script"
+	# run the configure script
+	../../configure --enable-unicode --enable-debug && success=1
 
-if [ $success = 1 ]; then
-	threads=$(nproc);
+	if [ $success = 1 ]; then
+		threads=$(nproc);
 
-	echo "Starting silent make on $threads processes...";
+		echo "Starting silent make on $threads processes...";
 
-	# build the library (only print errors)
-	make -j$threads --silent && ms=1
+		# build the library (only print errors)
+		make -j$threads --silent && ms=1
 
-	if [ $ms = 1 ]; then
-		# install (requires priviledges)
-		echo "Starting the silent make install, please enter the administrator password if prompted"
-		sudo make install --silent && mi=1
-		
-		if [ $mi=1 ]; then
-			# test the installed library
-			echo "wx-config: Currently installed wxWidgets version is $(wx-config --version)";
+		if [ $ms = 1 ]; then
+			# install (requires priviledges)
+			echo "Starting the silent make install, please enter the administrator password if prompted"
+			sudo make install --silent && mi=1
+			
+			if [ $mi=1 ]; then
+				# test the installed library
+				echo "wx-config: Currently installed wxWidgets version is $(wx-config --version)";
 
-			#echo "Running ldconfig to configure the dynamic linker runtime bindings, please enter the administrator password if prompted."
-			#sudo /sbin/ldconfig /usr/local/lib;
+				#echo "Running ldconfig to configure the dynamic linker runtime bindings, please enter the administrator password if prompted."
+				#sudo /sbin/ldconfig /usr/local/lib;
 
-			echo "Setup is complete!"
+				echo "Setup is complete!"
+			else
+				echo "Make install failed with errors. Check the above output, correct the errors, and re-run this script."
+			fi
 		else
-			echo "Make install failed with errors. Please check the above output, correct the errors, and re-run this script."
+			echo "Make failed with errors. Check the above output, correct the errors, and re-run this script."
 		fi
+		
 	else
-		echo "Make failed with errors. Please check the above output, correct the errors, and re-run this script."
+		echo "Configure failed with errors. Check the above output, correct the errors, and re-run this script."
 	fi
-	
 else
-	echo "Configure failed with errors. Please check the above output, correct the errors, and re-run this script."
+	echo "autogen.sh failed with errors. Check the above output, correct the errors, and re-run this script.";
 fi
 
 # set the directory back to the original script directory
