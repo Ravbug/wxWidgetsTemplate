@@ -6,10 +6,15 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )" ;
 cd $DIR;
 
-# make the build directory
-mkdir -p wxWidgets/build/linux;
-cd wxWidgets/build/linux;
+cd wxWidgets/
+echo "Running autogen.sh"
+./autogen.sh;
 
+# make the build directory
+mkdir -p build/linux;
+cd build/linux;
+
+echo "Running configure script"
 # run the configure script
 ../../configure --enable-unicode --enable-debug && success=1
 
