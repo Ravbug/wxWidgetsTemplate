@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AA1D0F4D222A09A600678304"
-               BuildableName = "wxTemplateDynamic.app"
-               BlueprintName = "wxTemplateDynamic"
-               ReferencedContainer = "container:wxTemplate.xcodeproj">
+               BuildableName = "macDynamic.app"
+               BlueprintName = "macDynamic"
+               ReferencedContainer = "container:mac.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA1D0F4D222A09A600678304"
-            BuildableName = "wxTemplateDynamic.app"
-            BlueprintName = "wxTemplateDynamic"
-            ReferencedContainer = "container:wxTemplate.xcodeproj">
+            BuildableName = "macDynamic.app"
+            BlueprintName = "macDynamic"
+            ReferencedContainer = "container:mac.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA1D0F4D222A09A600678304"
-            BuildableName = "wxTemplateDynamic.app"
-            BlueprintName = "wxTemplateDynamic"
-            ReferencedContainer = "container:wxTemplate.xcodeproj">
+            BuildableName = "macDynamic.app"
+            BlueprintName = "macDynamic"
+            ReferencedContainer = "container:mac.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA1D0F4D222A09A600678304"
-            BuildableName = "wxTemplateDynamic.app"
-            BlueprintName = "wxTemplateDynamic"
-            ReferencedContainer = "container:wxTemplate.xcodeproj">
+            BuildableName = "macDynamic.app"
+            BlueprintName = "macDynamic"
+            ReferencedContainer = "container:mac.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
