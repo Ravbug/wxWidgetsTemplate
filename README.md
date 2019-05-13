@@ -13,10 +13,10 @@ All you need to do is start writing your app! Everything has been set up.
 Additional instructions are on the Wiki.
 
 ## Get Started with this template
-To get started using this template with your own code, see [this guide](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Getting-Started-Using-This-Template-for-Your-Own-Code).
+To get started using this template with your own code, see [this guide](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Getting-Started-Using-This-Template-for-Your-Own-Code) on the wiki.
 
 ## Updating the wxWidgets version
-See the [wiki page](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Updating-or-Resetting-wxWidgets) for details. 
+See this [wiki page](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Updating-or-Resetting-wxWidgets) for details. 
 
 ## Issues
 Please report all problems in the [Issues](https://github.com/Ravbug/wxWidgetsTemplate/issues) section of this repository. 
