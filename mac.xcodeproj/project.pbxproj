@@ -302,6 +302,7 @@
 				AA14A0F2222A1219002C4553 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		AA1D0F4F222A09A600678304 /* Products */ = {
 			isa = PBXGroup;
@@ -725,6 +726,8 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(WXROOT)/src/tiff/libtiff\"",
 					"\"$(WXROOT)/src/regex\"",
+					"\"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\"",
+					"\"$(WXROOT)/include\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -788,6 +791,8 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(WXROOT)/src/tiff/libtiff\"",
 					"\"$(WXROOT)/src/regex\"",
+					"\"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\"",
+					"\"$(WXROOT)/include\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -814,10 +819,6 @@
 				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravbug.wxTemplateDynamic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(WXROOT)/include\"",
-					"\"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\"",
-				);
 			};
 			name = Debug;
 		};
@@ -835,10 +836,6 @@
 				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravbug.wxTemplateDynamic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(WXROOT)/include\"",
-					"\"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\"",
-				);
 			};
 			name = Release;
 		};
@@ -848,6 +845,19 @@
 				CODE_SIGN_ENTITLEMENTS = wxTest/wxTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(WXROOT)/include\"",
+					"\"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\"",
+					"\"$(WXROOT)/src/tiff/libtiff\"",
+					"\"$(WXROOT)/src/regex\"",
+					"\"$(WXROOT)/src/stc/scintilla/lexlib\"",
+					"\"$(WXROOT)/src/stc/scintilla/include\"",
+					"\"$(WXROOT)/src/stc/scintilla/src\"",
+					"\"$(WXROOT)/src/expat/expat/lib\"",
+					"\"$(WXROOT)/src/png\"",
+					"\"$(WXROOT)/src/jpeg\"",
+					"\"$(WXROOT)/src/zlib\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/source/Info_cocoa.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -856,18 +866,6 @@
 				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravbug.wxTemplateStatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(WXROOT)/include\"",
-					"\"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\"",
-					"\"$(WXROOT)/src/zlib\"",
-					"\"$(WXROOT)/src/jpeg\"",
-					"\"$(WXROOT)/src/png\"",
-					"\"$(WXROOT)/src/expat/expat/lib\"",
-					"\"$(WXROOT)/src/tiff/libtiff\"",
-					"\"$(WXROOT)/src/stc/scintilla/src\"",
-					"\"$(WXROOT)/src/stc/scintilla/include\"",
-					"\"$(WXROOT)/src/stc/scintilla/lexlib\"",
-				);
 			};
 			name = Debug;
 		};
@@ -877,6 +875,19 @@
 				CODE_SIGN_ENTITLEMENTS = wxTest/wxTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(WXROOT)/include\"",
+					"\"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\"",
+					"\"$(WXROOT)/src/tiff/libtiff\"",
+					"\"$(WXROOT)/src/regex\"",
+					"\"$(WXROOT)/src/stc/scintilla/lexlib\"",
+					"\"$(WXROOT)/src/stc/scintilla/include\"",
+					"\"$(WXROOT)/src/stc/scintilla/src\"",
+					"\"$(WXROOT)/src/expat/expat/lib\"",
+					"\"$(WXROOT)/src/png\"",
+					"\"$(WXROOT)/src/jpeg\"",
+					"\"$(WXROOT)/src/zlib\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/source/Info_cocoa.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -885,18 +896,6 @@
 				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravbug.wxTemplateStatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(WXROOT)/include\"",
-					"\"$(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include\"",
-					"\"$(WXROOT)/src/zlib\"",
-					"\"$(WXROOT)/src/jpeg\"",
-					"\"$(WXROOT)/src/png\"",
-					"\"$(WXROOT)/src/expat/expat/lib\"",
-					"\"$(WXROOT)/src/tiff/libtiff\"",
-					"\"$(WXROOT)/src/stc/scintilla/src\"",
-					"\"$(WXROOT)/src/stc/scintilla/include\"",
-					"\"$(WXROOT)/src/stc/scintilla/lexlib\"",
-				);
 			};
 			name = Release;
 		};
