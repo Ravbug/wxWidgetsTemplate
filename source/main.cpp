@@ -17,10 +17,10 @@ class MyApp: public wxApp
 public:
     virtual bool OnInit();
 };
-class MyFrame: public wxFrame
+class MainFrame: public wxFrame
 {
 public:
-    MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size);
+    MainFrame(const wxString& title, const wxPoint& pos, const wxSize& size);
 private:
     void OnHello(wxCommandEvent& event);
     void OnExit(wxCommandEvent& event);
@@ -31,19 +31,19 @@ enum
 {
     ID_Hello = 1
 };
-wxBEGIN_EVENT_TABLE(MyFrame, wxFrame)
-EVT_MENU(ID_Hello,   MyFrame::OnHello)
-EVT_MENU(wxID_EXIT,  MyFrame::OnExit)
-EVT_MENU(wxID_ABOUT, MyFrame::OnAbout)
+wxBEGIN_EVENT_TABLE(MainFrame, wxFrame)
+EVT_MENU(ID_Hello,   MainFrame::OnHello)
+EVT_MENU(wxID_EXIT,  MainFrame::OnExit)
+EVT_MENU(wxID_ABOUT, MainFrame::OnAbout)
 wxEND_EVENT_TABLE()
 wxIMPLEMENT_APP(MyApp);
 bool MyApp::OnInit()
 {
-    MyFrame *frame = new MyFrame( "Hello World", wxPoint(50, 50), wxSize(450, 340) );
+    MainFrame *frame = new MainFrame( "Hello World", wxPoint(50, 50), wxSize(450, 340) );
     frame->Show( true );
     return true;
 }
-MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
+MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
 : wxFrame(NULL, wxID_ANY, title, pos, size)
 {
     wxMenu *menuFile = new wxMenu;
@@ -60,16 +60,16 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
     CreateStatusBar();
     SetStatusText( "Welcome to wxWidgets!" );
 }
-void MyFrame::OnExit(wxCommandEvent& event)
+void MainFrame::OnExit(wxCommandEvent& event)
 {
     Close( true );
 }
-void MyFrame::OnAbout(wxCommandEvent& event)
+void MainFrame::OnAbout(wxCommandEvent& event)
 {
     wxMessageBox( "This is a wxWidgets' Hello world sample",
                  "About Hello World", wxOK | wxICON_INFORMATION );
 }
-void MyFrame::OnHello(wxCommandEvent& event)
+void MainFrame::OnHello(wxCommandEvent& event)
 {
     wxLogMessage("Hello world from wxWidgets!");
 }
