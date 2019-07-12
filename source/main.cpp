@@ -12,6 +12,12 @@
 #ifndef WX_PRECOMP
 #include <wx/wx.h>
 #endif
+
+//include the icon file on linux
+#ifdef __linux
+#include "wxlin.xpm"
+#endif
+
 class MyApp: public wxApp
 {
 public:
@@ -40,9 +46,12 @@ wxIMPLEMENT_APP(MyApp);
 bool MyApp::OnInit()
 {
     MainFrame *frame = new MainFrame( "Hello World", wxPoint(50, 50), wxSize(450, 340) );
+    //set the icon
 #ifdef _WIN32
-	//set the icon (name is the same as the one used in the resource file definition)
+	//name is the same as the one used in the resource file definition
 	frame->SetIcon(wxIcon("IDI_WXWIN"));
+#elif __linux
+	frame->SetIcon(wxIcon(wxICON(wxlin)));
 #endif 
 
     frame->Show( true );
