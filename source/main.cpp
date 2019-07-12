@@ -40,6 +40,11 @@ wxIMPLEMENT_APP(MyApp);
 bool MyApp::OnInit()
 {
     MainFrame *frame = new MainFrame( "Hello World", wxPoint(50, 50), wxSize(450, 340) );
+#ifdef _WIN32
+	//set the icon (name is the same as the one used in the resource file definition)
+	frame->SetIcon(wxIcon("IDI_WXWIN"));
+#endif 
+
     frame->Show( true );
     return true;
 }
