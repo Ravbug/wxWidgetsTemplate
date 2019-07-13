@@ -2,7 +2,7 @@
 <img align="left" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/WxWidgets.svg/2000px-WxWidgets.svg.png">
 
 wxWidgets is an efficient cross-platform GUI library for C++. However, wxWidgets is quite difficult to set up.
-This template project fixes that. It contains a Mac Xcode project, a Windows Visual Studio project, and two bash scripts for Linux.
+This template project fixes that. It contains a Mac Xcode project, a Windows Visual Studio project, and compilation scripts for Linux.
 All you need to do is start writing your app! Everything has been set up.
 
 ## Try it out!
