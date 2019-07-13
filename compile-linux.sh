@@ -1,2 +1,0 @@
-make -j$(nproc) --silent
-
