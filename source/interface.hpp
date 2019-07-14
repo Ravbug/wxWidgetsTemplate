@@ -7,6 +7,9 @@
 
 #pragma once
 #include <wx/string.h>
+#include <wx/gdicmn.h>
+#include <wx/frame.h>
+#include <wx/event.h>
 
 
 class MainFrame: public wxFrame

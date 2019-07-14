@@ -7,6 +7,9 @@
 // Place constructors and function definitons here.
 
 #include "interface.hpp"
+#include <wx/menu.h>
+#include <wx/msgdlg.h>
+#include <wx/log.h> 
 
 //include the icon file on linux
 #ifdef __linux
