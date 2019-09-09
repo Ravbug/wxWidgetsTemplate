@@ -30,6 +30,10 @@
 		AADF6A2F222B360200991DD2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A2E222B360200991DD2 /* IOKit.framework */; };
 		AADF6A31222B360700991DD2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A30222B360700991DD2 /* AppKit.framework */; };
 		AADF6A33222B360C00991DD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A32222B360C00991DD2 /* Foundation.framework */; };
+		AAE2C40C2326D46A003C381B /* globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAE2C40B2326D46A003C381B /* globals.cpp */; };
+		AAE2C40D2326D46A003C381B /* globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAE2C40B2326D46A003C381B /* globals.cpp */; };
+		AAE2C4292326D967003C381B /* interface_derived.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAE2C4272326D967003C381B /* interface_derived.cpp */; };
+		AAE2C42A2326D967003C381B /* interface_derived.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAE2C4272326D967003C381B /* interface_derived.cpp */; };
 		AAF9D87C222B14E900437548 /* Info_cocoa.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAF9D87A222B14E900437548 /* Info_cocoa.plist */; };
 		AAF9D87D222B14E900437548 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF9D87B222B14E900437548 /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -235,7 +239,7 @@
 
 /* Begin PBXFileReference section */
 		41B5AAEC22DB8BB300347CC8 /* interface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = interface.cpp; sourceTree = "<group>"; };
-		41B5AAED22DB8BB400347CC8 /* interface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = interface.hpp; sourceTree = "<group>"; };
+		41B5AAED22DB8BB400347CC8 /* interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interface.h; sourceTree = "<group>"; };
 		AA012113224C24D4000F4F82 /* wxmac.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = wxmac.icns; sourceTree = "<group>"; };
 		AA1D0F4E222A09A600678304 /* macDynamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macDynamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1D0F63222A0A1D00678304 /* wxcocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wxcocoa.xcodeproj; path = wxWidgets/build/osx/wxcocoa.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -251,6 +255,9 @@
 		AADF6A2E222B360200991DD2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		AADF6A30222B360700991DD2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		AADF6A32222B360C00991DD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAE2C40B2326D46A003C381B /* globals.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = globals.cpp; sourceTree = "<group>"; };
+		AAE2C4272326D967003C381B /* interface_derived.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = interface_derived.cpp; sourceTree = "<group>"; };
+		AAE2C4282326D967003C381B /* interface_derived.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interface_derived.h; sourceTree = "<group>"; };
 		AAF9D87A222B14E900437548 /* Info_cocoa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info_cocoa.plist; path = source/Info_cocoa.plist; sourceTree = SOURCE_ROOT; };
 		AAF9D87B222B14E900437548 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = source/main.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -323,8 +330,11 @@
 				AA012113224C24D4000F4F82 /* wxmac.icns */,
 				AAF9D87A222B14E900437548 /* Info_cocoa.plist */,
 				AAF9D87B222B14E900437548 /* main.cpp */,
+				41B5AAED22DB8BB400347CC8 /* interface.h */,
 				41B5AAEC22DB8BB300347CC8 /* interface.cpp */,
-				41B5AAED22DB8BB400347CC8 /* interface.hpp */,
+				AAE2C4282326D967003C381B /* interface_derived.h */,
+				AAE2C4272326D967003C381B /* interface_derived.cpp */,
+				AAE2C40B2326D46A003C381B /* globals.cpp */,
 				AA1D0FCA222A0A4B00678304 /* wxcocoa.xcconfig */,
 				AA1D0FCB222A0A4B00678304 /* wxdebug.xcconfig */,
 				AA1D0FC9222A0A4A00678304 /* wxrelease.xcconfig */,
@@ -653,6 +663,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE2C40C2326D46A003C381B /* globals.cpp in Sources */,
+				AAE2C4292326D967003C381B /* interface_derived.cpp in Sources */,
 				AAF9D87D222B14E900437548 /* main.cpp in Sources */,
 				41B5AAEE22DB8BB400347CC8 /* interface.cpp in Sources */,
 			);
@@ -662,6 +674,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE2C40D2326D46A003C381B /* globals.cpp in Sources */,
+				AAE2C42A2326D967003C381B /* interface_derived.cpp in Sources */,
 				AAD015C0222B2FE300E25CB7 /* main.cpp in Sources */,
 				41B5AAEF22DB8BB400347CC8 /* interface.cpp in Sources */,
 			);

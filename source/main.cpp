@@ -14,7 +14,7 @@
 #include <wx/wx.h>
 #endif
 
-#include "interface.hpp"
+#include "interface_derived.h"
 
 class MyApp: public wxApp
 {
@@ -25,7 +25,7 @@ public:
 wxIMPLEMENT_APP(MyApp);
 bool MyApp::OnInit()
 {
-    MainFrame *frame = new MainFrame( "Hello World", wxPoint(50, 50), wxSize(450, 340) );
+    MainFrame *frame = new MainFrame( );
     frame->Show( true );
     return true;
 }

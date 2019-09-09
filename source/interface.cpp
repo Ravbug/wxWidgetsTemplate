@@ -1,69 +1,51 @@
+///////////////////////////////////////////////////////////////////////////
+// C++ code generated with wxFormBuilder (version Oct 26 2018)
+// http://www.wxformbuilder.org/
 //
-//  interface.cpp
-//
-//  Copyright © 2019 Ravbug. All rights reserved.
-//
-// This file contains the implementation for the main GUI.
-// Place constructors and function definitons here.
+// PLEASE DO *NOT* EDIT THIS FILE!
+///////////////////////////////////////////////////////////////////////////
 
-#include "interface.hpp"
-#include <wx/menu.h>
-#include <wx/msgdlg.h>
-#include <wx/log.h> 
+#include "interface.h"
 
-//include the icon file on linux
-#ifdef __linux
-#include "wxlin.xpm"
-#endif
+///////////////////////////////////////////////////////////////////////////
 
-//Declare events here
-wxBEGIN_EVENT_TABLE(MainFrame, wxFrame)
-EVT_MENU(ID_Hello,   MainFrame::OnHello)
-EVT_MENU(wxID_EXIT,  MainFrame::OnExit)
-EVT_MENU(wxID_ABOUT, MainFrame::OnAbout)
-wxEND_EVENT_TABLE()
-
-//window constructor
-MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
-: wxFrame(NULL, wxID_ANY, title, pos, size)
+MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& title, const wxPoint& pos, const wxSize& size, long style ) : wxFrame( parent, id, title, pos, size, style )
 {
-	//set up the menus
-	wxMenu *menuFile = new wxMenu;
-	menuFile->Append(ID_Hello, "&Hello...\tCtrl-H","Help string shown in status bar for this menu item");
-	menuFile->AppendSeparator();
-	menuFile->Append(wxID_EXIT);
-	wxMenu *menuHelp = new wxMenu;
-	menuHelp->Append(wxID_ABOUT);
-	wxMenuBar *menuBar = new wxMenuBar;
-	menuBar->Append( menuFile, "&File" );
-	menuBar->Append( menuHelp, "&Help" );
-	SetMenuBar( menuBar );
-	
-	//create the status bar, and set the text on it
-	CreateStatusBar();
-	SetStatusText( "Welcome to wxWidgets!" );
-	
-	//set the icon (windows and linux only)
-#ifdef _WIN32
-	//name is the same as the one used in the resource file definition
-	//the resource file definition must have the same ending as the name of the icon file itself
-	//in this case, the icon file is wxwin.ico, so the definition is IDI_WXWIN
-	SetIcon(wxIcon("IDI_WXWIN"));
-#elif __linux
-	SetIcon(wxIcon(wxICON(wxlin)));
-#endif
+	this->SetSizeHints( wxDefaultSize, wxDefaultSize );
+
+	wxBoxSizer* baseSizer;
+	baseSizer = new wxBoxSizer( wxVERTICAL );
+
+	infoLabel = new wxStaticText( this, wxID_ANY, wxT("Open form.fpb to edit this window. Then Generate Code (F8) and recompile."), wxDefaultPosition, wxDefaultSize, 0 );
+	infoLabel->Wrap( -1 );
+	baseSizer->Add( infoLabel, 0, wxALL, 5 );
+
+
+	this->SetSizer( baseSizer );
+	this->Layout();
+	statusBar = this->CreateStatusBar( 1, wxSTB_SIZEGRIP, wxID_ANY );
+	menuBar = new wxMenuBar( 0 );
+	menuFile = new wxMenu();
+	wxMenuItem* menuAbout;
+	menuAbout = new wxMenuItem( menuFile, wxID_ABOUT, wxString( wxT("About") ) , wxEmptyString, wxITEM_NORMAL );
+	menuFile->Append( menuAbout );
+
+	wxMenuItem* menuQuit;
+	menuQuit = new wxMenuItem( menuFile, wxID_EXIT, wxString( wxT("Close") ) + wxT('\t') + wxT("Ctrl-W"), wxEmptyString, wxITEM_NORMAL );
+	menuFile->Append( menuQuit );
+
+	wxMenuItem* menuHello;
+	menuHello = new wxMenuItem( menuFile, ID_Hello, wxString( wxT("Hello") ) + wxT('\t') + wxT("Ctrl-H"), wxT("Show Sample Dialog with custom ID"), wxITEM_NORMAL );
+	menuFile->Append( menuHello );
+
+	menuBar->Append( menuFile, wxT("File") );
+
+	this->SetMenuBar( menuBar );
+
+
+	this->Centre( wxBOTH );
 }
 
-//definitions for the events
-void MainFrame::OnExit(wxCommandEvent& event)
+MainFrameBase::~MainFrameBase()
 {
-	Close( true );
-}
-void MainFrame::OnAbout(wxCommandEvent& event)
-{
-	wxMessageBox( "This is a wxWidgets' Hello world sample", "About Hello World", wxOK | wxICON_INFORMATION );
-}
-void MainFrame::OnHello(wxCommandEvent& event)
-{
-	wxLogMessage("Hello world from wxWidgets!");
 }
