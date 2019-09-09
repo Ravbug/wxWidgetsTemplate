@@ -34,7 +34,7 @@ MainFrame::MainFrame(wxWindow* parent) : MainFrameBase( parent )
 		SetIcon(wxIcon("IDI_WXWIN"));
 	
 		//fix DPI scaling
-		dpi_scale(frame);
+		dpi_scale(this);
 	#elif __linux
 		SetIcon(wxIcon(wxICON(wxlin)));
 	#endif

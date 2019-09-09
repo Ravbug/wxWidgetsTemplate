@@ -6,6 +6,7 @@
 //
 //  Copyright © 2019 Ravbug. All rights reserved.
 //
+#include <wx/wx.h>
 
 /**
 Fits a wxWindow to its contents, and then sets that size as the window's minimum size.
@@ -38,12 +39,12 @@ inline float get_WIN_dpi_multiple() {
 }
 
 /**
-Scales a wxWindow to the correct size using the monitor's DPI factor (Windows only)
-This preserves the defined size of the window. To simply fit the window to contents, regardless
+Scales a wxWindow's minimum size to the correct size using the monitor's DPI factor (Windows only)
+This does not preserve the defined size of the window. To simply fit the window to contents, regardless
 of DPI, use fitWindowMinSize.
 @param window the wxWindow to scale
 */
-inline void dpi_scale(wxWindow* window) {
+inline void dpi_scale_minimum(wxWindow* window) {
 	//fit size to children
 	window->Fit();
 	
@@ -53,6 +54,18 @@ inline void dpi_scale(wxWindow* window) {
 	float minw = window->GetMinWidth() * fac;
 	//set the minimum size
 	window->SetSizeHints(wxSize(minw,minh));
+}
+
+/**
+Scales a wxWindow's current size to the correct size using the monitor's DPI factor (Windows only)
+This preserves the defined size of the window. To simply fit the window to contents, regardless
+of DPI, use fitWindowMinSize.
+@param window the wxWindow to scale
+*/
+inline void dpi_scale(wxWindow* window) {
+	float fac = get_WIN_dpi_multiple();
+	wxSize size = window->GetSize();
+	window->SetSize(wxSize(size.GetWidth() * fac,size.GetHeight()*fac));
 }
 
 #elif defined __APPLE__
