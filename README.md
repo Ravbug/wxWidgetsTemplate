@@ -2,8 +2,9 @@
 <img align="left" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/WxWidgets.svg/2000px-WxWidgets.svg.png">
 
 wxWidgets is an efficient cross-platform GUI library for C++. However, wxWidgets can be quite difficult to set up, especially for new users.
+
 This template project addresses this high barrier of entry. 
-<br>
+
 **Notable features you get with this template**
 - Easy compilation for Windows, macOS, and Linux, using a single codebase, with preconfigured Xcode, Visual Studio, and Make files.
 - [wxFormBuilder](https://github.com/wxFormBuilder/wxFormBuilder) integration – build your interface quickly in their fantastic visual editor!
