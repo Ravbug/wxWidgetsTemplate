@@ -12,14 +12,6 @@ This template project addresses this high barrier of entry.
 - Application icons – simply replace the relevant icon file
 - Portable  – the library is contained inside, so no need to install the library to every computer. If you do not want this, you can remove the library from the project easily. [More Info](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Referencing-wxWidgets-Externally-(Non-portable))
 
-
-## Try it out!
-1. Download this repository as a zip (Don't command line clone!), and unzip it.
-2. See the [Setup Instructions](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Building-the-Projects) on the Wiki.  
-3. Open the Xcode project, Visual Studio project, or main.cpp in your preferred editor.
-4. Compile and run the example!
-Additional instructions are on the Wiki.
-
 ## Get Started with this template
 To get started using this template with your own code, see [this guide](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Getting-Started) on the wiki.
 
