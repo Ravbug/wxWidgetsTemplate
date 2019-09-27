@@ -1,6 +1,7 @@
 # flags needed to build the target (compiler, target name, and compiler flags)
 CC = g++
-CFLAGS := `wxWidgets/build/linux/wx-config --cppflags` `wxWidgets/build/linux/wx-config --libs` -Wl,-rpath,wxWidgets/build/linux/lib/
+WXROOT := wxWidgets
+CFLAGS := `$(WXROOT)/build/linux/wx-config --cppflags` `$(WXROOT)/build/linux/wx-config --libs` -Wl,-rpath,$(WXROOT)/build/linux/lib/
 target = wxWidgetsTemplate
 
 # location of source files
@@ -8,7 +9,7 @@ source_dir = source
 build_dir = linux-build
 
 # library build information
-lib_build_path = wxWidgets/build/linux
+lib_build_path = $(WXROOT)/build/linux
 lib_file_detect = Makefile
 
 # derives names of object files (only looks at .cpp files)
@@ -44,7 +45,7 @@ clean:
 	rm -rf $(build_dir)
 	
 clean-library:
-	rm -rf wxWidgets/build/linux/
+	rm -rf $(WXROOT)/build/linux/
 	
 clean-all: clean clean-library
 	
