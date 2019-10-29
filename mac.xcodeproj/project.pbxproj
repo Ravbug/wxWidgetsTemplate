@@ -13,6 +13,7 @@
 		AA012115224C24D4000F4F82 /* wxmac.icns in Resources */ = {isa = PBXBuildFile; fileRef = AA012113224C24D4000F4F82 /* wxmac.icns */; };
 		AA0F3D942368A1B0008045EB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0F3D7A2368A1B0008045EB /* WebKit.framework */; };
 		AA14A0F3222A1219002C4553 /* libwx_osx_cocoa.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1D0F81222A0A1D00678304 /* libwx_osx_cocoa.dylib */; };
+		AA1C64AA2368D9E100C7745D /* libwx_osx_cocoa.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = AA1D0F81222A0A1D00678304 /* libwx_osx_cocoa.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		AAD015C0222B2FE300E25CB7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF9D87B222B14E900437548 /* main.cpp */; };
 		AADEA0E623293394007DB2B0 /* libwx_osx_cocoa_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1D0F83222A0A1D00678304 /* libwx_osx_cocoa_static.a */; };
 		AADF6A25222B359700991DD2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADF6A0B222B359700991DD2 /* CoreFoundation.framework */; };
@@ -215,6 +216,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AA1C64AB2368D9E100C7745D /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA1C64AA2368D9E100C7745D /* libwx_osx_cocoa.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		41B5AAEC22DB8BB300347CC8 /* interface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = interface.cpp; sourceTree = "<group>"; };
 		41B5AAED22DB8BB400347CC8 /* interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interface.h; sourceTree = "<group>"; };
@@ -366,6 +381,7 @@
 				AA1D0F4A222A09A600678304 /* Sources */,
 				AA1D0F4B222A09A600678304 /* Frameworks */,
 				AA1D0F4C222A09A600678304 /* Resources */,
+				AA1C64AB2368D9E100C7745D /* Embed Libraries */,
 			);
 			buildRules = (
 			);
