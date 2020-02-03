@@ -7,7 +7,7 @@
 // Place constructors and function definitons here.
 
 #include "interface_derived.h"
-#include "globals.cpp"
+#include "globals.h"
 
 
 //include the icon file on linux

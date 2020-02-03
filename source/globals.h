@@ -1,11 +1,12 @@
 //
-//  globals.cpp
+//  globals.h
 //
 //	Place global constants or functions without classes in this file.
 //	Then #include "globals.cpp" in files that need them
 //
 //  Copyright © 2019 Ravbug. All rights reserved.
 //
+#pragma once
 #include <wx/wx.h>
 
 /**
