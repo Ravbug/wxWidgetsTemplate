@@ -365,6 +365,9 @@ wxWidgets/lib/vc_x64_lib/
 # Linux compiled data
 wxWidgets/build/linux/
 linux-build/
+appimagetool.AppImage
+wxWidgets/autom4te.cache/
+appimage-src/
 
 # Mac OS temporary and compiled data
 *.DS_STORE
