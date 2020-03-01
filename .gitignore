@@ -367,7 +367,7 @@ wxWidgets/build/linux/
 linux-build/
 appimagetool.AppImage
 wxWidgets/autom4te.cache/
-appimage-src/
+AppDir/
 
 # Mac OS temporary and compiled data
 *.DS_STORE

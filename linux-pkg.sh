@@ -6,7 +6,7 @@ if [ ! -f "appimagetool.AppImage" ]; then
 	chmod +x appimagetool.AppImage
 fi
 
-appimagepath=appimage-src
+appimagepath=AppDir
 
 mkdir -p $appimagepath
 
@@ -39,10 +39,11 @@ cp $lib_dir/libwx_gtk3u_xrc-3.1.so.3.0.0 $appimagepath
 
 # generate AppImage pieces
 echo "cd \"\$(dirname \"$0\")\"; LD_LIBRARY_PATH=. ./$name" > $appimagepath/AppRun
+chmod +x $appimagepath/AppRun
 printf "[Desktop Entry]\nType=Application\nName=$name\nIcon=wxlin\nCategories=X-None;" > $appimagepath/$name.desktop
 
 # run AppImageTool
-./appimagetool.AppImage appimage-src/
+./appimagetool.AppImage $appimagepath
 
 #copy to linux build folder
 
