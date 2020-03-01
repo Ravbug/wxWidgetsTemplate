@@ -2,7 +2,7 @@
 
 # download latest AppImageTool if not downloaded
 if [ ! -f "appimagetool.AppImage" ]; then 
-	wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage -O appimagetool.AppImage
+	wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-`uname --m`.AppImage -O appimagetool.AppImage
 	chmod +x appimagetool.AppImage
 fi
 
@@ -38,14 +38,14 @@ cp $lib_dir/libwx_gtk3u_xrc-3.1.so.3.0.0 $appimagepath
 
 
 # generate AppImage pieces
-echo "cd \"\$(dirname \"$0\")\"; LD_LIBRARY_PATH=. ./$name" > $appimagepath/AppRun
+print "#!/bin/sh\ncd \"\$(dirname \"$0\")\"; echo 'starting!'; LD_LIBRARY_PATH=. ./$name" > $appimagepath/AppRun
 chmod +x $appimagepath/AppRun
 printf "[Desktop Entry]\nType=Application\nName=$name\nIcon=wxlin\nCategories=X-None;" > $appimagepath/$name.desktop
 
 # run AppImageTool
-./appimagetool.AppImage $appimagepath
+ARCH=`uname --m` ./appimagetool.AppImage $appimagepath
 
 #copy to linux build folder
 
 #cleanup
-#rm -r $appimagepath
+rm -r $appimagepath
