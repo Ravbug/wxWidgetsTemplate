@@ -38,7 +38,7 @@ cp $lib_dir/libwx_gtk3u_xrc-3.1.so.3.0.0 $appimagepath
 
 
 # generate AppImage pieces
-print "#!/bin/sh\ncd \"\$(dirname \"$0\")\"; echo 'starting!'; LD_LIBRARY_PATH=. ./$name" > $appimagepath/AppRun
+printf "#!/bin/sh\ncd \"\$(dirname \"\$0\")\"; echo 'starting!'; LD_LIBRARY_PATH=. ./$name" > $appimagepath/AppRun
 chmod +x $appimagepath/AppRun
 printf "[Desktop Entry]\nType=Application\nName=$name\nIcon=wxlin\nCategories=X-None;" > $appimagepath/$name.desktop
 
