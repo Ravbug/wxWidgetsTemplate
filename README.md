@@ -7,7 +7,7 @@ This template project addresses the high barrier of entry.
 
 ## Notable features you get with this template
 - Easily compile versions of your app for Windows, macOS, and Linux, using a single codebase with the preconfigured Xcode, Visual Studio, and Make files.
-  - Supports [AppImage](https://appimage.org) on Linux! See the [release builds guide](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Creating-Release-Builds) on the wiki for more information. 
+  - Supports [AppImage](https://appimage.org) on Linux! See the [release builds guide](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Creating-Release-Builds#linux) on the wiki for more information. 
 - [wxFormBuilder](https://github.com/wxFormBuilder/wxFormBuilder) integration – build your interface quickly in their fantastic visual editor!
 - Windows High DPI Awareness and helper functions to easily scale your UI to high resolution displays
 - Application icons – simply replace the relevant icon file
