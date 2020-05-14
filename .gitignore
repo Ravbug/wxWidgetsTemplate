@@ -361,6 +361,10 @@ wxWidgets/lib/vc_x64_lib/
 /wxWidgets/build/msw/vc_x64_mswud
 /wxWidgets/build/msw/vc_mswu
 /wxWidgets/build/msw/vc_x64_mswu
+wxWidgets/build/msw/vc_x64_mswuddll/ 
+wxWidgets/build/msw/vc_mswuddll/ 
+DLL Debug/
+DLL Release/
 
 # Linux compiled data
 wxWidgets/build/linux/
