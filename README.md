@@ -11,6 +11,7 @@ This template project addresses the high barrier of entry.
 - [wxFormBuilder](https://github.com/wxFormBuilder/wxFormBuilder) integration – build your interface quickly in their fantastic visual editor!
 - Windows High DPI Awareness and helper functions to easily scale your UI to high resolution displays
 - Application icons – simply replace the relevant icon file
+- Dynamic or static link wxWidgets with ease on all supported platforms
 - Portable codebase  – the library is contained inside, so no need to install the library to every computer. If you do not want this, you can easily remove the library from the project. [More Info](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Referencing-wxWidgets-Externally-(Non-portable))
 
 ## Get Started with this template
