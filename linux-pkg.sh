@@ -1,4 +1,6 @@
-# This script must be run from make! Use `make linux-pkg` 
+# This script must be run from make! Use `make linux-pkg`
+
+cd linux-build 
 
 # download latest AppImageTool if not downloaded
 if [ ! -f "appimagetool.AppImage" ]; then 
@@ -11,32 +13,36 @@ appimagepath=AppDir
 mkdir -p $appimagepath
 
 # copy necessary pieces
-cp $build_dir/$name $appimagepath	# executable
-cp $src/wxlin.xpm $appimagepath		# icon
+cp ../$build_dir/$name $appimagepath		# executable
+cp ../$src/wxlin.xpm $appimagepath		# icon
+
+lib_dir=../$lib_dir
 
 # copy dynamic libraries (uncomment the following if using dynamic wx build)
-#cp $lib_dir/libwx_baseu-3.1.so $appimagepath
-#cp $lib_dir/libwx_baseu-3.1.so.3 $appimagepath
-#cp $lib_dir/libwx_baseu-3.1.so.3.0.0 $appimagepath
-#cp $lib_dir/libwx_baseu_net-3.1.so $appimagepath
-#cp $lib_dir/libwx_baseu_net-3.1.so.3 $appimagepath
-#cp $lib_dir/libwx_baseu_net-3.1.so.3.0.0 $appimagepath
-#cp $lib_dir/libwx_baseu_xml-3.1.so $appimagepath
-#cp $lib_dir/libwx_baseu_xml-3.1.so.3 $appimagepath
-#cp $lib_dir/libwx_baseu_xml-3.1.so.3.0.0 $appimagepath
-#cp $lib_dir/libwx_gtk3u_core-3.1.so $appimagepath
-#cp $lib_dir/libwx_gtk3u_core-3.1.so.3 $appimagepath
-#cp $lib_dir/libwx_gtk3u_core-3.1.so.3.0.0 $appimagepath
-#cp $lib_dir/libwx_gtk3u_html-3.1.so $appimagepath
-#cp $lib_dir/libwx_gtk3u_html-3.1.so.3 $appimagepath
-#cp $lib_dir/libwx_gtk3u_html-3.1.so.3.0.0 $appimagepath
-#cp $lib_dir/libwx_gtk3u_qa-3.1.so $appimagepath
-#cp $lib_dir/libwx_gtk3u_qa-3.1.so.3 $appimagepath
-#cp $lib_dir/libwx_gtk3u_qa-3.1.so.3.0.0 $appimagepath
-#cp $lib_dir/libwx_gtk3u_xrc-3.1.so $appimagepath
-#cp $lib_dir/libwx_gtk3u_xrc-3.1.so.3 $appimagepath
-#cp $lib_dir/libwx_gtk3u_xrc-3.1.so.3.0.0 $appimagepath
-
+if [[ "$Dynamic" -eq 1 ]]; then
+	echo Copying Dynamic Libraries
+	cp $lib_dir/libwx_baseu-3.1.so $appimagepath
+	cp $lib_dir/libwx_baseu-3.1.so.3 $appimagepath
+	cp $lib_dir/libwx_baseu-3.1.so.3.0.0 $appimagepath
+	cp $lib_dir/libwx_baseu_net-3.1.so $appimagepath
+	cp $lib_dir/libwx_baseu_net-3.1.so.3 $appimagepath
+	cp $lib_dir/libwx_baseu_net-3.1.so.3.0.0 $appimagepath
+	cp $lib_dir/libwx_baseu_xml-3.1.so $appimagepath
+	cp $lib_dir/libwx_baseu_xml-3.1.so.3 $appimagepath
+	cp $lib_dir/libwx_baseu_xml-3.1.so.3.0.0 $appimagepath
+	cp $lib_dir/libwx_gtk3u_core-3.1.so $appimagepath
+	cp $lib_dir/libwx_gtk3u_core-3.1.so.3 $appimagepath
+	cp $lib_dir/libwx_gtk3u_core-3.1.so.3.0.0 $appimagepath
+	cp $lib_dir/libwx_gtk3u_html-3.1.so $appimagepath
+	cp $lib_dir/libwx_gtk3u_html-3.1.so.3 $appimagepath
+	cp $lib_dir/libwx_gtk3u_html-3.1.so.3.0.0 $appimagepath
+	cp $lib_dir/libwx_gtk3u_qa-3.1.so $appimagepath
+	cp $lib_dir/libwx_gtk3u_qa-3.1.so.3 $appimagepath
+	cp $lib_dir/libwx_gtk3u_qa-3.1.so.3.0.0 $appimagepath
+	cp $lib_dir/libwx_gtk3u_xrc-3.1.so $appimagepath
+	cp $lib_dir/libwx_gtk3u_xrc-3.1.so.3 $appimagepath
+	cp $lib_dir/libwx_gtk3u_xrc-3.1.so.3.0.0 $appimagepath
+fi
 
 # generate AppImage pieces
 printf "#!/bin/sh\ncd \"\$(dirname \"\$0\")\"; echo 'starting!'; LD_LIBRARY_PATH=. ./$name" > $appimagepath/AppRun

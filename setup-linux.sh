@@ -4,6 +4,7 @@
 # Modify this variable if wxWidgets is not located in this repository
 # change it to the path where wxWidgets is located
 WXROOT=wxWidgets
+dflag=""
 
 # function that prints an error message and stops the script
 # $1 = what failed
@@ -37,10 +38,15 @@ fi
 mkdir -p build/linux;
 cd build/linux;
 
-echoStatus "configure" "Running configure script"
+echoStatus "configure" "Running configure script with flags $WXFLAGS"
 # run the configure script
 success=0;
-../../configure --enable-unicode --disable-shared && success=1
+
+if [[ "$Dynamic" -eq 0 ]]; then
+	dflag=--disable-shared
+fi
+
+../../configure --enable-unicode $dflag $WXFLAGS && success=1
 
 # check success
 if [ $success = 0 ]; then

@@ -2,6 +2,8 @@
 CC = g++
 WXROOT := wxWidgets
 CFLAGS := `$(WXROOT)/build/linux/wx-config --cxxflags --libs` -Wl,-rpath,$(WXROOT)/build/linux/lib/
+WXFLAGS = ""
+Dynamic = 0
 target = wxWidgetsTemplate
 
 # location of source files
@@ -42,7 +44,7 @@ $(build_dir)/%.o: $(source_dir)/%.cpp
 	
 # build the library
 $(lib_build_path)/$(lib_file_detect): $(lib_build_path)/$(lib_file_detect)
-	./setup-linux.sh
+	WXFLAGS=$(WXFLAGS) Dynamic=$(Dynamic) ./setup-linux.sh
 
 # remove the build folder
 clean:
