@@ -18,7 +18,7 @@ This template project addresses the high barrier of entry.
 To get started using this template with your own code, see [the Getting Started guide](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Getting-Started) on the wiki.
 
 ## Updating the wxWidgets version
-Updating the wxWidgets version this project uses is as simple as overwriting the `wxWidgets` folder with the one for the new version. 
+Updating the wxWidgets version this project uses is as simple as overwriting the `wxWidgets` folder with the one for the new version and tweaking some files. 
 See the [Updating wxWidgets](https://github.com/Ravbug/wxWidgetsTemplate/wiki/Updating-or-Resetting-wxWidgets) guide on the Wiki for more information.
 
 ## Issues
