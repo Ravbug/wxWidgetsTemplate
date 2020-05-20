@@ -16,8 +16,8 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxBoxSizer* baseSizer;
 	baseSizer = new wxBoxSizer( wxVERTICAL );
 
-	infoLabel = new wxStaticText( this, wxID_ANY, wxT("Open form.fpb to edit this window. Then Generate Code (F8) and recompile."), wxDefaultPosition, wxDefaultSize, 0 );
-	infoLabel->Wrap( -1 );
+	infoLabel = new wxStaticText( this, wxID_ANY, wxT("Open form.fpb to edit this window. Then Generate Code (F8) and recompile. Unicode Test: 💬"), wxDefaultPosition, wxDefaultSize, 0 );
+	infoLabel->Wrap( 500 );
 	baseSizer->Add( infoLabel, 0, wxALL, 5 );
 
 

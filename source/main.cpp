@@ -14,6 +14,8 @@
 #include <wx/wx.h>
 #endif
 
+
+
 #include "interface_derived.h"
 
 class MyApp: public wxApp
@@ -25,6 +27,9 @@ public:
 wxIMPLEMENT_APP(MyApp);
 bool MyApp::OnInit()
 {
+    //this method is the entry point for the application.
+
+    //Create the main window and display it to the user
     MainFrame *frame = new MainFrame( );
     frame->Show( true );
     return true;

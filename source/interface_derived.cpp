@@ -7,6 +7,8 @@
 // Place constructors and function definitons here.
 
 #include "interface_derived.h"
+#include <wx/aboutdlg.h>
+#include <wx/version.h> 
 #include "globals.h"
 
 
@@ -20,6 +22,7 @@ wxBEGIN_EVENT_TABLE(MainFrame, wxFrame)
 EVT_MENU(ID_Hello,   MainFrame::OnHello)
 EVT_MENU(wxID_EXIT,  MainFrame::OnExit)
 EVT_MENU(wxID_ABOUT, MainFrame::OnAbout)
+EVT_DPI_CHANGED(MainFrame::HandleDPIChange)
 wxEND_EVENT_TABLE()
 
 MainFrame::MainFrame(wxWindow* parent) : MainFrameBase( parent )
@@ -41,15 +44,37 @@ MainFrame::MainFrame(wxWindow* parent) : MainFrameBase( parent )
 
 }
 
+void MainFrame::HandleDPIChange(wxDPIChangedEvent& event)
+{
+#ifdef _WIN32
+	dpi_scale(this);
+#endif
+}
+
 //definitions for the events
 void MainFrame::OnExit(wxCommandEvent& event)
 {
 	Close( true );
 }
+
+//called when the about menu is pressed
 void MainFrame::OnAbout(wxCommandEvent& event)
 {
-	wxMessageBox( "This is a wxWidgets' Hello world sample", "About Hello World", wxOK | wxICON_INFORMATION );
+	//example use of native about dialog with icons
+	wxAboutDialogInfo aboutInfo;
+	aboutInfo.SetName("wxWidgetsTemplate");
+	aboutInfo.SetVersion("1.0.0");
+	aboutInfo.SetCopyright("(C) 2020 Ravbug");
+	aboutInfo.SetDescription(wxString::Format("wxWidgets %d.%d.%d.%d", wxMAJOR_VERSION, wxMINOR_VERSION, wxRELEASE_NUMBER, wxSUBRELEASE_NUMBER));
+#if defined _WIN32
+	aboutInfo.SetIcon(wxIcon("IDI_WXWIN"));
+#elif defined __linux__
+	aboutInfo.SetIcon(wxICON(wxlin_s));
+#endif
+	wxAboutBox(aboutInfo);
 }
+
+//called when the hello menu is pressed
 void MainFrame::OnHello(wxCommandEvent& event)
 {
 	wxLogMessage("Hello world from wxWidgets!");

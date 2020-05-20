@@ -9,6 +9,7 @@
 // Define the user interface elements with wxFormBuilder
 
 #include "interface.h"
+#include <wx/event.h>
 
 //// end generated include
 
@@ -17,8 +18,10 @@ class MainFrame : public MainFrameBase
 public:
 	MainFrame(wxWindow* parent = NULL);
 private:
-	void OnHello(wxCommandEvent& event);
-	void OnExit(wxCommandEvent& event);
-	void OnAbout(wxCommandEvent& event);
+	void OnHello(wxCommandEvent&);
+	void OnExit(wxCommandEvent&);
+	void OnAbout(wxCommandEvent&);
+	void HandleDPIChange(wxDPIChangedEvent&);
+
 	wxDECLARE_EVENT_TABLE();
 };
