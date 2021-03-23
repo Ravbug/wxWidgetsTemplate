@@ -1,4 +1,10 @@
+# I am no longer updating this. 
+The most recent versions of wxWidgets has modern [CMake](https://cmake.org/download/) support, making this template useless, because CMake can generate IDE projects and makefiles for a variety of platforms automatically. I am keeping it online for historical reasons. 
+
+You can view the wxWidgets CMake documentation here: [CMake Overview](https://docs.wxwidgets.org/trunk/overview_cmake.html) and see my example CMakeLists.txt that handles macOS app bundles and icon files in the following repositories: [FatFileFinderCPP](https://github.com/Ravbug/FatFileFinderCPP/blob/master/CMakeLists.txt), [UnityHubNative](https://github.com/Ravbug/UnityHubNative/blob/master/CMakeLists.txt), [MinecraftSoundsExtractor](https://github.com/Ravbug/MCSoundsExtractorCPP/blob/master/CMakeLists.txt)
+
 # wxWidgetsTemplate
+
 <img align="left" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/WxWidgets.svg/2000px-WxWidgets.svg.png">
 
 wxWidgets is an efficient cross-platform GUI library for C++. However, wxWidgets can be quite difficult to set up on all of the supported systems, especially for new users.
